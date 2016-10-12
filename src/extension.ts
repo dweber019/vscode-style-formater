@@ -1,5 +1,5 @@
-import vscode = require("vscode");
-let prettydiff = require("prettydiff");
+import * as vscode from 'vscode';
+import prettydiff = require('prettydiff');
 
 export function format(document: vscode.TextDocument, range: vscode.Range, options: vscode.FormattingOptions) {
 
@@ -24,6 +24,9 @@ export function format(document: vscode.TextDocument, range: vscode.Range, optio
     case "less":
       args["lang"] = "css";
       break;
+    case "scss":
+      args["lang"] = "css";
+      break;
     case "sass":
       args["lang"] = "css";
       break;
@@ -41,8 +44,7 @@ export function format(document: vscode.TextDocument, range: vscode.Range, optio
 }
 
 export function activate(context: vscode.ExtensionContext) {
-
-  let docType: Array<string> = ["css", "less", "sass"];
+  let docType: string[] = ["css", "less", "scss", "sass"];
 
   docType.forEach(element => {
     registerDocType(element);
