@@ -37,7 +37,7 @@ export function format(document: vscode.TextDocument, range: vscode.Range, optio
   let settings = vscode.workspace.getConfiguration("sfmt");
   for (let attrname in settings) { args[attrname] = settings[attrname]; }
 
-  let output = prettydiff.api(args);
+  let output = (<any>prettydiff).api(args);
   result.push(new vscode.TextEdit(range, output[0]));
 
   return result;
