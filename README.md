@@ -11,4 +11,4 @@ Visual Studio Code extension to apply CSS/LESS/SASS formatting guidelines to a f
 
 ## Configuration
 
-Use `style-formater.*` in your settings json, to see available configuration options.
+Use `sfmt.*` in your settings json, to see available configuration options.
