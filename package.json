@@ -47,6 +47,11 @@
           "default": true,
           "description": "Forces new line characters between blocks of CSS code. This option will override option preserve."
         },
+        "sfmt.inchar": {
+          "type": "string",
+          "default": " ",
+          "description": "Stores the character literal used for an indentation. A single indentation is the result of this value repeated the number of times specified in the insize option. For tabs use '\t'"
+        },
         "sfmt.insize": {
           "type": "number",
           "default": 2,
