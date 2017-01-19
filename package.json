@@ -2,7 +2,7 @@
   "name": "vscode-style-formatter",
   "displayName": "Style formatter",
   "description": "Applies format rule to a file",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "publisher": "dweber019",
   "license": "MIT",
   "icon": "logo.png",
